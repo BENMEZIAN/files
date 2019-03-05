@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551793239 source:c:\users\inspiron\desktop\initiation les fichiers\main.c
+	<stdio.h>
+	<stdlib.h>
+
