@@ -15,25 +15,32 @@ int main()
     if (f != NULL){
              // COMMENT ECRIRE DANS UN FICHIER AVEC LE MODE ECRITURE 
     
-		 // ecrire un seule caractËre
+		 // ecrire un seule caract√®re
     	 fputc('A', f); 
-         // ecrire un chaine de caractËre
-         fputs("Salut les ZÈr0s\nComment allez-vous ?",f);
+         // ecrire un chaine de caract√®re
+         fputs("Salut les Z√©r0s\nComment allez-vous ?",f);
         /*l'indication de l'utilisation 
 	          de la fonction printf*/
-	     //On demande l'‚ge
+	     //On demande l'√¢ge
       /* printf("Quel age avez-vous ? ");
         scanf("%d", &age);*/
-        // On l'Ècrit dans le fichier
+        // On l'√©crit dans le fichier
       // fprintf(f,"Le Monsieur qui utilise le programme, il a %d ans", age);
        
 		 // COMMENT LIRE DANS UN FICHIER AVEC LE MODE LECTURE 
-		while(!feof(f)){
-        caractere = fgetc(f); // On lit le caractËre
-         printf("%c", caractere); // On l'affiche
+			while(!feof(f)){
+		  // lire caract√®re par caract√®re
+         caractere = fgetc(f); 
+         printf("%c",caractere); 
+         // lire ligne par ligne
+		 fgets(chaine,20,f);
+		 printf("%s",chaine);
 		}
-	    
-        fclose(f);
+
+	       printf("\n"); 
+          longueur=ftell(f);
+          printf("le longueur est:%d",longueur);
+           fclose(f);
     }
       
      
