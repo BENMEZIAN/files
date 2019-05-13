@@ -1,0 +1,2 @@
+ordinateur  dell  5  852.000000
+ordinateur  accer  2  123.000000
